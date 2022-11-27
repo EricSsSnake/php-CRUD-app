@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color: #333;
+  font-family: "helvetica", "arial", sans-serif;
+}
+
+nav {
+  background-color: rgb(86, 153, 255);
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  margin: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+}
+h1,
+h2 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  align-self: flex-start;
+  color: rgb(86, 153, 255);
+  padding: 0 1rem;
+}
+h1 {
+  font-size: 3rem;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #ccc;
+  padding: 0.5rem;
+}
+.post-container.empty {
+  display: none;
+}
+
+.post {
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+}
+.post-header {
+  margin-bottom: 0.5rem;
+  color: rgb(86, 153, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.post-title {
+  font-size: 1.5rem;
+}
+.post-author {
+  font-size: 0.9rem;
+  color: #555;
+}
+.edit-dlt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dlt-btn,
+#edit-btn {
+  background: none;
+  text-transform: uppercase;
+  border: none;
+  color: red;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+#dlt-btn:hover {
+  color: rgb(253, 129, 129);
+}
+#edit-btn {
+  color: rgb(0, 158, 206);
+}
+#edit-btn:hover {
+  color: rgb(0, 195, 255);
+}
+
+.add-posts-container {
+  width: 80%;
+}
+.add-post-input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.add-post-input label {
+  margin-bottom: 0.5rem;
+}
+.add-post-input input,
+.add-post-input textarea {
+  border-radius: 8px;
+  border: solid 1px #333;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: "helvetica", "arial", sans-serif;
+}
+.add-post-input input[type="submit"] {
+  background: black;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.add-post-input input[type="submit"]:hover {
+  background-color: #222;
+}
+.add-post-msg.err {
+  color: red;
+}
+.add-post-msg.success {
+  color: green;
+}
+
+.no-posts-msg {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 5rem;
+}
